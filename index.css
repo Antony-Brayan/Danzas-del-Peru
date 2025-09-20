@@ -1,0 +1,129 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fae8e5; /* color de fondo similar a la imagen */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffe9d3;
+    padding: 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-weight: 700;
+}
+
+nav ul li {
+    position: relative;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+}
+
+nav ul li q {
+    font-style: normal;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #fff4e0;
+    border: 1px solid #d6a95f;
+    border-radius: 4px;
+    padding: 10px 0;
+    min-width: 120px;
+    z-index: 100;
+    flex-direction: column;
+}
+
+nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li ul li {
+    padding: 5px 20px;
+}
+
+nav ul li ul li a {
+    color: #b36505;
+}
+
+main {
+    max-width: 800px;
+    background-color: #fff;
+    margin: 20px auto 40px auto;
+    padding: 20px 40px 40px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+main h1 {
+    text-align: center;
+    color: #b36505; /* naranja */
+    margin-bottom: 20px;
+}
+
+main div img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto 30px auto;
+}
+
+ul {
+    list-style: disc inside;
+}
+
+h2 {
+    color: #b36505;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px 0;
+    background-color: #ffe9d3;
+    font-weight: 600;
+    color: #333;
+    border-top: 1px solid #d6a95f;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main {
+        padding: 20px;
+        margin: 10px;
+    }
+}
